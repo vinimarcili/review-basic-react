@@ -1,0 +1,12 @@
+.weather-page {
+  width: min(420px, 92vw);
+  margin: 4rem 0;
+  text-align: center;
+}
+
+.weather-page > h1 {
+  margin: 0 0 1.5rem;
+  font-size: 1.9rem;
+  /* leve inclinação pra fugir do título centralizado "reto" padrão */
+  transform: rotate(-1deg);
+}

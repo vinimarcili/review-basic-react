@@ -1,0 +1,64 @@
+.weather-card__status {
+  color: #c7cede;
+  font-size: 0.95rem;
+}
+
+.weather-card__status--error {
+  color: #ff9a8b;
+}
+
+.weather-card {
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  /* fundo muda conforme a condição climática, em vez de um card genérico único */
+  background: linear-gradient(160deg, var(--tone-1), var(--tone-2));
+}
+
+.weather-card--ensolarado {
+  --tone-1: rgba(255, 209, 102, 0.25);
+  --tone-2: rgba(255, 209, 102, 0.05);
+}
+
+.weather-card--nublado {
+  --tone-1: rgba(148, 163, 184, 0.25);
+  --tone-2: rgba(148, 163, 184, 0.05);
+}
+
+.weather-card--chuvoso {
+  --tone-1: rgba(94, 168, 214, 0.3);
+  --tone-2: rgba(94, 168, 214, 0.05);
+}
+
+.weather-card--tempestade {
+  --tone-1: rgba(124, 92, 214, 0.3);
+  --tone-2: rgba(124, 92, 214, 0.05);
+}
+
+.weather-card__icon {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.weather-card h2 {
+  margin: 0.3rem 0 0;
+}
+
+.weather-card__temp {
+  font-size: 3rem;
+  margin: 0.2rem 0;
+  font-weight: 700;
+}
+
+.weather-card__condition {
+  margin: 0 0 1rem;
+  color: #dbe2f5;
+}
+
+.weather-card__details {
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  font-size: 0.85rem;
+  color: #c7cede;
+}
