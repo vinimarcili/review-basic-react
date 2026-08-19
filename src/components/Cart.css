@@ -1,0 +1,45 @@
+.cart {
+  position: sticky;
+  top: 1.5rem;
+  background: #fffffe;
+  border: 2px dashed #20232a;
+  border-radius: 4px;
+  padding: 1.2rem 1.3rem;
+  /* recorte em zigue-zague no rodapé, lembrando um recibo de papel */
+  clip-path: polygon(
+    0 0, 100% 0, 100% 96%,
+    92% 100%, 84% 96%, 76% 100%, 68% 96%, 60% 100%,
+    52% 96%, 44% 100%, 36% 96%, 28% 100%, 20% 96%,
+    12% 100%, 4% 96%, 0 100%
+  );
+  padding-bottom: 2rem;
+}
+
+.cart h2 {
+  margin-top: 0;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.cart__empty {
+  color: #6b6f76;
+  font-size: 0.9rem;
+}
+
+.cart__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.cart__total {
+  margin-top: 1rem;
+  padding-top: 0.8rem;
+  border-top: 2px dashed #20232a;
+  display: flex;
+  justify-content: space-between;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 1.05rem;
+}

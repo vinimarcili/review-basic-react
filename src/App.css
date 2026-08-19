@@ -1,0 +1,30 @@
+.shop {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.shop__header h1 {
+  margin: 0 0 2rem;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  transform: rotate(-1deg);
+  display: inline-block;
+}
+
+.shop__layout {
+  display: grid;
+  /* colunas desiguais (produtos ocupam mais espaço que o carrinho) em vez de 50/50 */
+  grid-template-columns: 1.6fr 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+
+@media (max-width: 760px) {
+  .shop__layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+.shop__products h2 {
+  margin-top: 0;
+}

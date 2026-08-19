@@ -1,0 +1,26 @@
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.cart-item__name {
+  margin: 0;
+  font-weight: 600;
+}
+
+.cart-item__meta {
+  margin: 0.15rem 0 0;
+  font-size: 0.8rem;
+  color: #6b6f76;
+}
+
+.cart-item__remove {
+  border: none;
+  background: none;
+  color: #d1495b;
+  font-size: 0.75rem;
+  cursor: pointer;
+  text-decoration: underline;
+}

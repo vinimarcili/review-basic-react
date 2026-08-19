@@ -1,0 +1,15 @@
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.2rem;
+}
+
+.product-grid__item--tall {
+  transform: translateY(-0.6rem);
+}
+
+@media (max-width: 480px) {
+  .product-grid__item--tall {
+    transform: none;
+  }
+}
