@@ -1,0 +1,17 @@
+.character-grid {
+  display: grid;
+  /* colunas de larguras diferentes pra fugir da grade uniforme "bootstrap-like" */
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
+  gap: 1.4rem;
+  align-items: start;
+}
+
+.character-grid__item--wide {
+  grid-column: span 2;
+}
+
+@media (max-width: 480px) {
+  .character-grid__item--wide {
+    grid-column: span 1;
+  }
+}

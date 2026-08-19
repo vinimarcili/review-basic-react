@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&family=Space+Grotesk:wght@400;500;600&display=swap");
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Space Grotesk", system-ui, sans-serif;
+  /* fundo em camadas para não ficar um gradiente liso genérico */
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 140, 66, 0.16), transparent 45%),
+    radial-gradient(circle at 85% 0%, rgba(86, 219, 168, 0.12), transparent 40%),
+    #12141c;
+  color: #f2f1ec;
+}
